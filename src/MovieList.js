@@ -23,7 +23,7 @@ const MovieList = () => {
       <div>
       {
          movies.map(movie => (
-            <Movie name={movie.name}/>
+            <Movie name={movie.name} price={movie.price}/>
          ))
       }
       </div>
