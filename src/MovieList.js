@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Movie from './Movie';
 import {MovieContext} from './MovieContext';
 const MovieList = () => {
    // Get access to the value that this component needs from the MovieContext
-   const [movies, setMovies] = useContext(MovieContext);
+   const [movies] = useContext(MovieContext);
    return (
       <div>
          {
@@ -14,5 +14,4 @@ const MovieList = () => {
       </div>
    );
 }
-
 export default MovieList;
