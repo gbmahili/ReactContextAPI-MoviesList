@@ -1,8 +1,6 @@
 import React, {useState, createContext} from 'react';
-
 // Instantiate the moviecontext
 export const MovieContext = createContext();
-
 // This component will provide the data.
 export const MovieProvider = (props) => {
    const [movies, setMovies] = useState([
@@ -27,4 +25,4 @@ export const MovieProvider = (props) => {
          {props.children}
       </MovieContext.Provider>
    )
-}
+};
